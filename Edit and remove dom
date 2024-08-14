@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color:aliceblue;
+
+        }
+    </style>
+</head>
+<body >
+    <ul class="language">
+        <li>Js</li>
+    </ul>
+    
+</body>
+<script> 
+function addLanguage(language)
+{
+    const li=document.createElement("li");
+    const addText=document.createTextNode(language);
+    li.appendChild(addText);
+    document.querySelector(".language").appendChild(li);
+
+}
+
+addLanguage("Mojo");
+addLanguage("Python");
+
+const edit=document.querySelector("li:nth-child(1)");
+// const li=document.createElement("li");
+// li.textContent="GoLang";
+// edit.replaceWith(li);
+
+// edit.outerHTML='<li>Java</li>';
+
+//remove
+
+edit.remove();
+    </script>
+
+</html>
